@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_item_profile"
+        android:title="@string/menu_item_profile" />
+    <item android:id="@+id/menu_item_mySupplyDemand"
+        android:title="@string/menu_item_mySupplyDemand" />
+    <item android:id="@+id/menu_item_supplyDemand"
+        android:title="@string/menu_item_supplyDemand" />
+    <item android:id="@+id/menu_item_notification"
+        android:title="@string/menu_item_notification" />
+    <item android:id="@+id/menu_item_geolocation"
+        android:title="@string/menu_item_geolocation" />
+    <item android:id="@+id/menu_item_filter"
+        android:title="@string/menu_item_filter" />
+    <item android:id="@+id/menu_item_pay"
+        android:title="@string/menu_item_pay" />
+
+</menu>

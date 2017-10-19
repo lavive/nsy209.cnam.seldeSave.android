@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SEL de SAVE</string>
+    <!-- permission -->
+    <string name="permission_gps">Vous devez activer le GPS sur votre smartphone</string>
+    <!-- authentication -->
+    <string name="authentication_title">Authentification</string>
+    <string name="authentication_mobileId">Entrez votre code donné par l\'association</string>
+    <string name="authentication_cellNumber">Entrez votre numéro de portable</string>
+    <string name="authentication_button">VALIDER</string>
+    <string name="first_connection">Le réseau internet doit être accessible pour la 1° utilisation</string>
+    <string name="no_connection">Le réseau internet n\'est pas accessible</string>
+    <string name="retrieve_data">En attente de récupération des données</string>
+    <string name="waiting">Données en cours de mise à jour ...</string>
+    <string name="look_for_profile">Recherche de votre profil en cours ...</string>
+    <!-- profile datas -->
+    <string name="my_profile">Mon Profil</string>
+    <string name="forname">Prénom</string>
+    <string name="mobile_id">mobile id</string>
+    <string name="name">Nom</string>
+    <string name="postal_code">Code Postal</string>
+    <string name="town">Ville</string>
+    <string name="address">Adresse Postale</string>
+    <string name="email">Adresse email</string>
+    <string name="cell_number">N° Portable</string>
+    <string name="phone_number">N° Fixe</string>
+    <string name="webSite">Site Web</string>
+    <!-- home menu -->
+    <string name="menu_item_profile">Mon Profil</string>
+    <string name="menu_item_mySupplyDemand">Mes Offres et Demandes</string>
+    <string name="menu_item_supplyDemand">Offres et Demandes</string>
+    <string name="menu_item_notification">Mes Notifications</string>
+    <string name="menu_item_geolocation">Géolocalisation</string>
+    <string name="menu_item_filter">Filtrer</string>
+    <string name="menu_item_pay">Payer</string>
+    <string name="menu_item_send">Envoyer Message</string>
+    <!-- wealthSheet -->
+    <string name="initial_account">Compte Initial</string>
+    <string name="final_account">Solde</string>
+    <string name="amount">Montant</string>
+    <string name="supplyDemand_payed">Offre/Demande</string>
+    <string name="empty_transaction">Pas de transaction enregistrée</string>
+    <string name="button_gotoMyTransactions">Mes Transactions en Attente</string>
+    <string name="title_my_transactions">Mes transactions en attente de traitement</string>
+    <string name="empty_my_transactions">Pas de transaction en cours</string>
+    <!-- my supplies demands -->
+    <string name="title_supply_demand">MES OFFRES ET DEMANDES</string>
+    <string name="new_supply_demand">Nouvelle Offre/Demande</string>
+    <string name="update_supply_demand">Modifier Offre/Demande</string>
+    <string name="card_supply_demand">Fiche Offre/Demande</string>
+    <string name="type_supply_demand">Offre ou Demande</string>
+    <string name="category_supply_demand">Catégorie</string>
+    <string name="description_supply_demand">Description brève</string>
+    <string name="enum_supply">offre</string>
+    <string name="enum_demand">demande</string>
+    <!-- all supplies demands -->
+    <string name="title_demand">DEMANDES</string>
+    <string name="title_supply">OFFRES</string>
+    <string name="code_supply_demand">Code</string>
+    <!-- confirm -->
+    <string name="are_you_sure">ETES-VOUS SUR?</string>
+    <string name="confirm">CONFIRMER</string>
+    <string name="cancel">ANNULER</string>
+    <!-- members -->
+    <string name="members">ADHERENTS</string>
+    <string name="apply_filters">Appliquer les filtres</string>
+    <!-- filters -->
+    <string name="title_filter">FILTRES</string>
+    <string name="member_filter">Filtrer Adhérents</string>
+    <string name="category_filter">Filtrer catégories</string>
+    <string name="distance_filter">Filtrer distance (m)</string>
+    <string name="title_category_filter">FILTRER CATEGORIES</string>
+    <string name="title_member_filter">FILTRER ADHERENTS</string>
+    <!-- geolocation -->
+    <string name="apply_filters_button">Activer filtres</string>
+    <string name="disable_filters_button">Désactiver filtres</string>
+    <string name="members_list_button">Voir Liste</string>
+    <string name="member_button">Voir Membre</string>
+    <string name="title_activity_geolocation_members">Map</string>
+    <string name="address_found">coordonnées GPS trouvées</string>
+    <string name="address_not_found">coordonnées GPS non trouvées</string>
+    <string name="service_not_available">service de geolocation non disponible</string>
+    <string name="geolocation_not_done">Les coordonnées GPS n\'ont pas encore été récupérées</string>
+    <!-- payments -->
+    <string name="receive_payment">Recevoir par NFC</string>
+    <string name="payment_NFC">Paiement par NFC</string>
+    <string name="payment">Paiement</string>
+    <string name="wait_nfc">En attente NFC, veuillez approcher les appareils ...</string>
+    <string name="error_nfc">Erreur de connexion NFC, recommencer</string>
+    <string name="bad_nfc">Le NFC n\' est pas disponible</string>
+    <string name="message_nfc">transfert par NFC réussi!</string>
+    <string name="amount_input">Veuillez saisir le montant</string>
+    <string name="debtor">Débiteur</string>
+    <string name="creditor">Créditeur</string>
+    <string name="select_member">Sélectionnez un adhérent à payer</string>
+    <string name="select_supply_demand">Sélectionnez un service à payer</string>
+    <string name="title_supplies_demands">OFFRES et DEMANDES</string>
+    <string name="for_">Pour:</string>
+    <string name="to">à:</string>
+    <string name="result_NFC">Le paiement a bien été effectué</string>
+    <!-- notifications -->
+    <string name="subject">Sujet</string>
+    <string name="create_supplyDemand">L\'offre/demande a été créée</string>
+    <string name="update_supplyDemand">L\'offre/demande a été mise à jour</string>
+    <string name="delete">a bien été effacée</string>
+    <string name="delete_notification">Les notifications ont été effacées</string>
+    <string name="create_filter">Les filtres ont été mis à jour</string>
+    <string name="create_transaction">La transaction a été créée</string>
+    <string name="notification_title">notification </string>
+    <!-- webServices -->
+    <string name="datas_transferred">Les données ont bien été envoyées</string>
+    <string name="datas_lost">Les données n\'ont pas pu être envoyées pour l\'instant, d\'autres tentatives seront effectuée</string>
+    <string name="association_update">les coordonnées de l\'association ont été mises à jour</string>
+    <string name="categories_update">les catégories ont été mises à jour</string>
+    <string name="members_update">les membres ont été mis à jour</string>
+    <string name="suppliesDemands_update">les offres et demandes ont été mises à jour</string>
+    <string name="wealthSheet_update">la feuille de richesse a été mise à jour</string>
+    <string name="notifications_update">les notifications ont été mise à jour</string>
+    <!-- error messages !-->
+    <string name="no_connection_update_fail">Pas de connexion à internet, les valeurs ne seront pas mises à jour!</string>
+    <string name="error_mobileId">Le code saisie n\'est pas reconnu, recommencez!</string>
+    <string name="error_authentication">Les valeurs saisies ne correspondent pas à un profil, contactez l\'association!</string>
+    <string name="error_data">La transmission de données n\'a pas pu être effectuée</string>
+    <string name="error_my_supply_demand">Pas d\'offres ou demandes enregistrées!</string>
+    <string name="error_my_notification">Pas de notification en cours!</string>
+    <string name="error_my_notification_delete">Pas de notification sélectionnée!</string>
+    <string name="error_supply">Pas d\'offres enregistrées!</string>
+    <string name="error_demand">Pas de demandes enregistrées!</string>
+    <string name="error_member">Pas d\'adhérent encore enregistrés!</string>
+    <string name="error_address">Adresses à géolocaliser non trouvées!</string>
+    <string name="empty"> ne doit pas être vide!</string>
+    <string name="less200"> doit comporter moins de 200 caractères!</string>
+    <string name="less100"> doit comporter moins de 100 caractères!</string>
+    <string name="less50"> doit comporter moins de 50 caractères!</string>
+    <string name="bigDecimalWellFormed"> doit être un nombre positif avec 2 chiffres après la virgule maximum (X, X.X ou X.XX)!</string>
+    <string name="postalCodeWellFormed"> n\'est pas un code postal valide (5 chiffres)!</string>
+    <string name="phoneNumberWellFormed"> n\'est pas un numéro de téléphone valide (0 + 9 chiffres)!</string>
+    <string name="emailWellFormed"> le format de l\'adresse mail n\'est pas valide!</string>
+    <string name="numberWellFormed"> doit être un nombre entier positif!</string>
+</resources>
