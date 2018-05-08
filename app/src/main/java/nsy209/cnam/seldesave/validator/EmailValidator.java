@@ -11,6 +11,11 @@ public class EmailValidator implements IValidator {
 
     @Override
     public EnumCheck validate(String stringToValidate){
+        /* email can be not input */
+        if(stringToValidate == null || stringToValidate.equals("")) {
+            return null;
+        }
+
         if(!stringToValidate.matches(regex)){
             return EnumCheck.EMAIL_WELL_FORMED;
         }

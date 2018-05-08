@@ -158,28 +158,53 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         /* update views */
 
         forname = (TextView) findViewById(R.id.forname);
-        forname.setText(((MyProfileModel) observable).getForname());
+        if(((MyProfileModel) observable).getForname() == null || ((MyProfileModel) observable).getForname().equals(""))
+            forname.setText(R.string.forname);
+        else
+            forname.setText(((MyProfileModel) observable).getForname());
 
         name = (TextView) findViewById(R.id.name);
-        name.setText(((MyProfileModel) observable).getName());
+        if(((MyProfileModel) observable).getName() == null || ((MyProfileModel) observable).getName().equals(""))
+            name.setText(R.string.name);
+        else
+            name.setText(((MyProfileModel) observable).getName());
 
         address = (TextView) findViewById(R.id.address);
-        address.setText(((MyProfileModel) observable).getAddress());
+        if(((MyProfileModel) observable).getAddress() == null || ((MyProfileModel) observable).getAddress().equals(""))
+            address.setText(R.string.address);
+        else
+            address.setText(((MyProfileModel) observable).getAddress());
 
         postalCode = (TextView) findViewById(R.id.postalCode);
-        postalCode.setText(((MyProfileModel) observable).getPostalCode());
+        if(((MyProfileModel) observable).getPostalCode() == null || ((MyProfileModel) observable).getPostalCode().equals(""))
+            postalCode.setText(R.string.postal_code);
+        else
+            postalCode.setText(((MyProfileModel) observable).getPostalCode());
 
         town = (TextView) findViewById(R.id.town);
-        town.setText(((MyProfileModel) observable).getTown());
+        if(((MyProfileModel) observable).getTown() == null || ((MyProfileModel) observable).getTown().equals(""))
+            town.setText(R.string.town);
+        else
+            town.setText(((MyProfileModel) observable).getTown());
 
         phoneNumber = (TextView) findViewById(R.id.phoneNumber);
-        phoneNumber.setText(((MyProfileModel) observable).getPhoneNumber());
+        if(((MyProfileModel) observable).getPhoneNumber() == null || ((MyProfileModel) observable).getPhoneNumber().equals(""))
+            phoneNumber.setText(R.string.phone_number);
+        else
+            phoneNumber.setText(((MyProfileModel) observable).getPhoneNumber());
 
         email = (TextView) findViewById(R.id.email);
-        email.setText(((MyProfileModel) observable).getEmail());
+        if(((MyProfileModel) observable).getEmail() == null || ((MyProfileModel) observable).getEmail().equals(""))
+            email.setText(R.string.email);
+        else
+            email.setText(((MyProfileModel) observable).getEmail());
+
 
         cellNumber = (TextView) findViewById(R.id.cellNumber);
-        cellNumber.setText(((MyProfileModel) observable).getCellNumber());
+        if(((MyProfileModel) observable).getCellNumber() == null || ((MyProfileModel) observable).getCellNumber().equals(""))
+            cellNumber.setText(R.string.cell_number);
+        else
+            cellNumber.setText(((MyProfileModel) observable).getCellNumber());
 
     }
 

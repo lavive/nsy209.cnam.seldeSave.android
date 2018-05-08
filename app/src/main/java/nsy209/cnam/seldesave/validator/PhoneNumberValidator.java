@@ -11,6 +11,11 @@ public class PhoneNumberValidator implements IValidator {
 
     @Override
     public EnumCheck validate(String stringToValidate){
+        /* phoneNumber can be not input */
+        if(stringToValidate == null || stringToValidate.equals("")) {
+            return null;
+        }
+
         if(!stringToValidate.matches(regex)){
             return EnumCheck.PHONE_NUMBER_WELL_FORMED;
         }

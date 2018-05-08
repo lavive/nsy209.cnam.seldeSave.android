@@ -26,7 +26,7 @@ public class CheckDatasActivity extends AppCompatActivity {
         daoFactory.open();
 
         /* for testing first connexion */
-        /*daoFactory.clear();*/
+        daoFactory.clear();
         /****************/
 
         /* Checking */
