@@ -52,7 +52,7 @@ public class BackgroundConstant {
     public static final String WEALTHSHEET_TABLE= "wealthSheet_table";
     public static final String MY_SUPPLYDEMAND_TABLE= "my_supplyDemand_table";
     public static final String NOTIFICATION_BUFFER_TABLE= "notification_buffer_table";
-    public static final String NEW_TRANCACTION_TABLE= "new_transaction_table";
+    public static final String NEW_TRANSACTION_TABLE= "new_transaction_table";
 
     /* reference to data to send or receive */
     public static final String MY_PROFILE_BEAN = "my_profile_bean";
