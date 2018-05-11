@@ -40,7 +40,7 @@ public class BaseToUpdate implements IBaseToUpdate {
             else if(table.equals(BackgroundConstant.NOTIFICATION_BUFFER_TABLE)){
                 baseToUpdateList.add(new NotificationToRemoteDelete(activity,this.daoFactory,remoteId));
             }
-            else if(table.equals(BackgroundConstant.NEW_TRANCACTION_TABLE)){
+            else if(table.equals(BackgroundConstant.NEW_TRANSACTION_TABLE)){
                 baseToUpdateList.add(new WealthSheetToUpdate(activity,this.daoFactory,remoteId));
             }
         }
