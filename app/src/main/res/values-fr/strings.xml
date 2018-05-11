@@ -115,7 +115,7 @@
     <string name="members_update">les membres ont été mis à jour</string>
     <string name="suppliesDemands_update">les offres et demandes ont été mises à jour</string>
     <string name="wealthSheet_update">la feuille de richesse a été mise à jour</string>
-    <string name="notifications_update">les notifications ont été mise à jour</string>
+    <string name="notifications_update">les notifications ont été mises à jour</string>
     <!-- error messages !-->
     <string name="no_connection_update_fail">Pas de connexion à internet, les valeurs ne seront pas mises à jour!</string>
     <string name="error_mobileId">Le code saisie n\'est pas reconnu, recommencez!</string>
