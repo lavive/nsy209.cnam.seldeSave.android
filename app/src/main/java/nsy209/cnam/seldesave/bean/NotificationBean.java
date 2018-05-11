@@ -8,6 +8,7 @@ import java.util.List;
 
 import nsy209.cnam.seldesave.bean.helper.ApplyFilterBuilder;
 import nsy209.cnam.seldesave.dao.DaoFactory;
+import nsy209.cnam.seldesave.dao.sharedPreferences.AssociationPreferences;
 
 /**
  * Created by lavive on 01/06/17.
@@ -146,7 +147,8 @@ public class NotificationBean implements Parcelable{
         for(NotificationBean notificationBean:notificationsBean){
             boolean isInside = false;
             for(MemberBean memberBean:membersFiltered){
-                if(notificationBean.getPersonOriginId() == memberBean.getRemote_id()){
+                if(notificationBean.getPersonOriginId() == memberBean.getRemote_id() ||
+                        notificationBean.getPersonOriginId() == AssociationPreferences.getRemoteId()){
                     isInside = true;
                     break;
                 }

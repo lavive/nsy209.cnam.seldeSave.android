@@ -91,6 +91,7 @@ public class MyNotificationsActivity extends AppCompatActivity implements View.O
                 intent.putExtra(ActivityConstant.KEY_INTENT_MY_SUPPLYDEMAND, false);
                 intent.putExtra(ActivityConstant.KEY_INTENT_NOTIFICATIONS, true);
                 intent.putExtra(ActivityConstant.KEY_INTENT_FILTER, false);
+
                 intent.putExtra(ActivityConstant.KEY_INTENT_PAYMENT, false);
                 intent.putExtra(ActivityConstant.KEY_INTENT_IDS, notifications_id);
                 startActivityForResult(intent, ActivityConstant.REQUEST_EXIT);

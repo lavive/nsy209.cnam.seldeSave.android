@@ -9,7 +9,7 @@ import retrofit2.Retrofit;
  */
 
 public class RetrofitBuilder {
-    private static final String BASE_URL = "http://XX.XXX.XXX.XX:XXXX/selServices/";
+    private static final String BASE_URL = "http://78.221.197.69:9991/selServices/";
 
     public static WebService getClient(){
         Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(MoshiConverterFactory.create()).build();

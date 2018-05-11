@@ -35,6 +35,7 @@ public class UpdateNotificationResultReceiver extends ResultReceiver {
         if (resultCode == BackgroundConstant.SUCCESS_RESULT) {
             List<NotificationBean> notifications = resultData.getParcelableArrayList(BackgroundConstant.RESULT_NOTIFICATION);
             List<NotificationBean> notificationsFiltered = NotificationBean.applyFilters(notifications,daoFactory/*daoFactory.getMyProfileDao().getMyFilter()*/);
+
             daoFactory.getMyProfileDao().addNotifications(notificationsFiltered);
             daoFactory.getMyProfileDao().addNotificationsToBuffer(notifications);
             /* display notification and message toast  */
