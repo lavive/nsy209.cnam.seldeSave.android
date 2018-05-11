@@ -48,7 +48,7 @@ public class CheckRemoteDataBaseResultReceiver extends ResultReceiver {
             tablesToUpdate.add(BackgroundConstant.NOTIFICATION_BUFFER_TABLE);
         }
         if(!daoFactory.getTransactionDao().getNewTransactions().isEmpty()){
-            tablesToUpdate.add(BackgroundConstant.NEW_TRANCACTION_TABLE);
+            tablesToUpdate.add(BackgroundConstant.NEW_TRANSACTION_TABLE);
         }
 
         (new BaseToUpdate(tablesToUpdate,this.activity,this.daoFactory)).update();
