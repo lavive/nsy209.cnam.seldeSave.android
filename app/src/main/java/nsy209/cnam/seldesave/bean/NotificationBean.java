@@ -141,7 +141,8 @@ public class NotificationBean implements Parcelable{
         ApplyFilterBuilder applyFilterBuilder = new ApplyFilterBuilder(daoFactory.getMemberDao().getAllMembers(),daoFactory);
         applyFilterBuilder =applyFilterBuilder.apply(daoFactory.getMyProfileDao().getMyFilter().isCategoriesChecked(),
                 daoFactory.getMyProfileDao().getMyFilter().isMembersChecked(),
-                daoFactory.getMyProfileDao().getMyFilter().isDistanceChecked());
+                daoFactory.getMyProfileDao().getMyFilter().isDistanceChecked(),
+                notificationsBean);
         List<MemberBean> membersFiltered = applyFilterBuilder.getMembersFiltered();
         List<NotificationBean> notificationBeanFilteredList = new ArrayList<NotificationBean>();
         for(NotificationBean notificationBean:notificationsBean){

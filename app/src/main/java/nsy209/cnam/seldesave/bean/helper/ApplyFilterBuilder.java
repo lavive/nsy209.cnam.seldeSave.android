@@ -11,6 +11,7 @@ import java.util.List;
 import nsy209.cnam.seldesave.bean.CategoryBean;
 import nsy209.cnam.seldesave.bean.GeolocationBean;
 import nsy209.cnam.seldesave.bean.MemberBean;
+import nsy209.cnam.seldesave.bean.NotificationBean;
 import nsy209.cnam.seldesave.bean.SupplyDemandBean;
 import nsy209.cnam.seldesave.dao.DaoFactory;
 
@@ -29,15 +30,15 @@ public class ApplyFilterBuilder {
         this.daoFactory = daoFactory;
     }
 
-    /* apply filter */
-    public ApplyFilterBuilder apply(boolean applyCategory, boolean applyMember, boolean applyDistance){
+    /* apply filters */
+    public ApplyFilterBuilder apply(boolean applyCategory, boolean applyMember, boolean applyDistance, List<NotificationBean> notificationsBean){
         daoFactory.open();
 
         if(applyCategory == true || applyMember == true || applyDistance == true){
 
             List<MemberBean> memberBeanList = new ArrayList<MemberBean>();
             if(applyCategory){
-                for(MemberBean memberBean:applyCategoryFilter()){
+                for(MemberBean memberBean:applyCategoryFilter(notificationsBean)){
                     if(!memberIsInside(memberBean,memberBeanList)){
                         memberBeanList.add(memberBean);
                     }
@@ -63,6 +64,10 @@ public class ApplyFilterBuilder {
 
     }
 
+    public ApplyFilterBuilder apply(boolean applyCategory, boolean applyMember, boolean applyDistance){
+        return apply(applyCategory, applyMember, applyDistance, null);
+    }
+
     /* getter */
 
     public List<MemberBean> getMembersFiltered() {
@@ -70,7 +75,7 @@ public class ApplyFilterBuilder {
     }
 
     /* apply category filter */
-    private List<MemberBean> applyCategoryFilter(){
+    private List<MemberBean> applyCategoryFilter(List<NotificationBean> notificationsBean){
         List<MemberBean> memberBeanList = copy(membersFiltered);
         Iterator<MemberBean> iterator = memberBeanList.iterator();
         while (iterator.hasNext()) {
@@ -78,7 +83,19 @@ public class ApplyFilterBuilder {
             boolean isInside = false;
             for (CategoryBean categoryBean : daoFactory.getMyProfileDao().getMyFilter().getCategoriesFilter()) {
                 for (SupplyDemandBean supplyDemandBean : daoFactory.getSupplyDemandDao().getAllSuppliesDemands(memberBean)) {
-                    if (supplyDemandBean.getCategory().equals(categoryBean.getCategory())) {
+                    boolean categoryMatch = false;
+                    if(notificationsBean != null) {
+                        for (NotificationBean notification : notificationsBean) {
+                            if (categoryBean.getCategory().equals(notification.getCategory())) {
+                                categoryMatch = true;
+                                break;
+                            }
+                        }
+                    }
+                    else {
+                        categoryMatch = true;
+                    }
+                    if (supplyDemandBean.getCategory().equals(categoryBean.getCategory()) && categoryMatch) {
                         isInside = true;
                         break;
                     }
@@ -123,8 +140,8 @@ public class ApplyFilterBuilder {
         Iterator<MemberBean> iterator = memberBeanList.iterator();
         while (iterator.hasNext()) {
             MemberBean memberBean = iterator.next();
-            if (daoFactory.getMyProfileDao().getMyFilter().getDistance() <= computeDistance(memberBean) ||
-                    computeDistance(memberBean) == 0d) {
+            if (daoFactory.getMyProfileDao().getMyFilter().getDistance() != 0d &&
+                    daoFactory.getMyProfileDao().getMyFilter().getDistance() <= computeDistance(memberBean)) {
                 iterator.remove();
             }
         }
