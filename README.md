@@ -4,6 +4,7 @@ CNAM NSY209 project 2018 - Android App for SEL associations
 
 ## Installation
 ### pre-requisites
+* Before install [cnam.nsy209.selServices.association](https://github.com/lavive/cnam.nsy209.selServices.association)
 * install [Android Studio](https://developer.android.com/studio/)
 * clone this repository into a folder
 
