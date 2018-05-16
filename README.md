@@ -12,4 +12,6 @@ CNAM NSY209 project 2018 - Android App for SEL associations
 * click 'file' -> 'open'
 * search into folder above
 * select project and click 'OK'
+* Go to 'RetrofitBuilder' file in package *nsy209.cnam.seldesave.background.webService*
+* Change **BASE_URL** into machine address where **cnam.nsy209.selServices.restServie** will be installed 
 * run the app 
