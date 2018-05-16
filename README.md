@@ -1,6 +1,6 @@
 # nsy209.cnam.seldeSave.android
 
-CNAM NSY209 project 2018 - Android App for SEL associations
+CNAM NSY209 project 2018 - Android App for SEL Services
 
 ## Installation
 ### pre-requisites
