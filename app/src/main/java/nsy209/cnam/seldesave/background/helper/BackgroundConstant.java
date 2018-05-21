@@ -7,7 +7,7 @@ package nsy209.cnam.seldesave.background.helper;
 public class BackgroundConstant {
 
     /* data */
-    public static final long PERIOD_UPDATE = 1 * 20 * 1000;
+    public static final long PERIOD_UPDATE = 1 * 10 * 1000;
 
     /* result code */
     public static final int SUCCESS_RESULT = 0;
